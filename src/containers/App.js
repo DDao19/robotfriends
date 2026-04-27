@@ -33,11 +33,11 @@ class App extends Component {
       return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase());
     })
     if(!this.state.robots.length) {
-      return <h1 class="loading">Loading...</h1>
+      return <h1 className="loading">Loading...</h1>
     } else {
       return (
         <div className='tc'>
-          <h1 class='title'>Random Robot Friends</h1>
+          <h1 className='title'>Random Robot Friends</h1>
           <SearchBox searchChange={this.onSearchChange}/>
           <Scroll>
             <ErrorBoundry>
